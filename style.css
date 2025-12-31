@@ -1,0 +1,491 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* GENERAL */
+.section-padding {
+    padding: 80px 0;
+}
+
+/* HERO */
+.hero {
+    background: url('https://images.unsplash.com/photo-1501183638710-841dd1904471') center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.7);
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* INSTALLMENTS */
+.installment-section {
+    background: #ffffff;
+    padding: 50px 20px;
+    border-radius: 15px;
+    margin: 50px 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.installment-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #004c8c;
+    margin-bottom: 25px;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: #1a73e8;
+}
+
+/* COMPENSATION */
+.compensation-section {
+    background: linear-gradient(135deg, #004c8c, #1a73e8);
+    color: #fff;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.content-box {
+    max-width: 700px;
+    background-color: rgba(255,255,255,0.15);
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #64b5f6;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #ffe082;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+}
+
+.lead-text {
+    font-size: 1.2rem;
+    color: #e3f2fd;
+}
+
+/* CTA BUTTON */
+.register-btn {
+    background-color: #ff3d00;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 15px 40px;
+    border-radius: 50px;
+    box-shadow: 0 6px 12px rgba(255,61,0,0.4);
+    transition: 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #e63900;
+    transform: translateY(-3px);
+}
+
+/* ANIMATION */
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255,61,0,0.7); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(255,61,0,0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255,61,0,0); }
+}
+
+.pulsing {
+    animation: pulse 2s infinite;
+}
+
+/* Fade-in */
+.fade {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: .3s ease-out;
+}
+
+.fade.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* 🔥 ناف بار مودرن */
+.modern-nav {
+  background: #ffffff !important;
+  border-bottom: 1px solid #eaeaea;
+  padding: 12px 0;
+}
+
+.modern-nav .nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: 0.25s;
+}
+
+.modern-nav .nav-link:hover {
+  background: #f1f5ff;
+  color: #0d6efd !important;
+}
+
+/* زرار لوج ان */
+.login-btn {
+  border: 2px solid #0d6efd;
+  color: #0d6efd;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #0d6efd;
+  color: #fff;
+}
+
+/* 🎨 سكشن "هل تشعر بالندم؟" */
+#regret-section {
+  background: linear-gradient(135deg, #eaf1ff 0%, #ffffff 100%);
+  border: 1px solid #dce6ff;
+  border-radius: 20px;
+  padding: 40px 25px;
+  margin: 50px auto;
+}
+
+#regret-section h2 {
+  color: #0d6efd;
+  font-weight: 700;
+}
+
+#regret-section p {
+  color: #555;
+}
+
+#regret-section .btn {
+  background: #0d6efd;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-weight: 600;
+}
+/* الألوان المقترحة للعقارات:
+   --primary-dark-blue: #004d7a; (أزرق داكن للاحترافية)
+   --success-color: #a87932; (لون ذهبي/بني خفيف)
+   --light-gray: #f4f6f9; (خلفية نظيفة)
+*/
+
+.trust-section {
+    padding: 70px 0;
+    background-color: #f4f6f9; /* خلفية نظيفة وفاتحة */
+    text-align: center;
+    direction: rtl; 
+}
+
+.trust-section h2 {
+    color: #004d7a; /* أزرق داكن أساسي */
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.trust-section .subtitle {
+    color: #5a6268;
+    font-size: 1.15em;
+    margin-bottom: 50px;
+}
+
+.trust-section .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.trust-points {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px; 
+    margin-bottom: 50px;
+    flex-wrap: wrap; 
+}
+
+.trust-points .point {
+    background-color: #ffffff; 
+    border-top: 5px solid #a87932; /* شريط ذهبي/بني خفيف في الأعلى للتميز */
+    border-radius: 8px;
+    padding: 35px 25px;
+    width: calc(33% - 30px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); /* ظل أقوى قليلاً */
+    transition: all 0.4s ease;
+    text-align: right; /* محاذاة النص لليمين داخل النقطة */
+}
+
+.trust-points .point:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
+}
+
+.trust-points .point h3 {
+    color: #004d7a; /* أزرق داكن */
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.trust-points .point p {
+    color: #495057;
+    line-height: 1.7;
+}
+
+/* تصميم الأزرار والروابط */
+.btn-link {
+    display: inline-block;
+    color: #a87932; /* لون ذهبي/بني */
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    border-bottom: 2px solid #a87932;
+    padding-bottom: 3px;
+    transition: color 0.3s;
+}
+
+.btn-link:hover {
+    color: #7c5825;
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: #004d7a; /* خلفية الزر باللون الأزرق الداكن */
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #003350;
+}
+
+.faq-link {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.faq-link h4 {
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+/* استجابة التصميم للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .trust-points {
+        flex-direction: column; 
+    }
+
+    .trust-points .point {
+        width: 100%; 
+        margin-bottom: 25px;
+        text-align: center; /* يمكن إبقاء النص في المنتصف على الموبايل */
+    }
+}
+/* الألوان المستخدمة:
+   --primary-color: #007bff; (أزرق أساسي)
+   --text-dark: #333;
+   --text-light: #666;
+   --sale-color: #28a745; (أخضر للبيع)
+   --rent-color: #ffc107; (أصفر للإيجار)
+*/
+
+.mansoura-listings {
+    padding: 80px 0;
+    background-color: #f8f9fa; /* خلفية القسم */
+    direction: rtl; 
+    font-family: 'Arial', sans-serif;
+}
+
+.mansoura-listings .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.mansoura-listings h2 {
+    color: #004d7a; /* لون العنوان الرئيسي */
+    margin-bottom: 10px;
+    font-size: 2.2em;
+}
+
+.mansoura-listings .subtitle {
+    color: #666;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+}
+
+.listings-grid {
+    display: flex;
+    gap: 30px; /* المسافة بين البطاقات */
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+/* تصميم البطاقة العقارية */
+.property-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden; /* لإخفاء الزوايا الزائدة للصورة */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 350px; /* عرض ثابت للبطاقة */
+    max-width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: right;
+}
+
+.property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-image-container {
+    height: 220px;
+    background-color: #ccc; /* لون مؤقت للصورة */
+    position: relative;
+    /* عادة يتم هنا وضع صورة بخاصية background-image أو عنصر <img> */
+}
+
+.property-tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9em;
+    z-index: 10;
+}
+
+.property-tag.sale {
+    background-color: #28a745; /* أخضر للبيع */
+}
+
+.property-tag.rent {
+    background-color: #ffc107; /* أصفر للإيجار */
+    color: #333;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.location {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #eee;
+}
+
+.detail-item {
+    background-color: #f0f3f6;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.price-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    color: #007bff; /* أزرق أساسي للسعر */
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+/* الأزرار */
+.btn-primary {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary-listings {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-secondary-listings:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.view-all-action {
+    margin-top: 40px;
+}
+/* ... الكود CSS السابق ... */
+
+.card-image-container {
+    height: 220px;
+    /* أزل background-color: #ccc; الذي كان لغرض مؤقت */
+    position: relative;
+    overflow: hidden; /* مهم لضمان بقاء الصورة داخل الحاوية */
+}
+
+/* التعديل الجديد: تحديد خصائص وسم <img> */
+.card-image-container .property-img {
+    width: 100%; /* اجعل الصورة تملأ عرض الحاوية */
+    height: 100%; /* اجعل الصورة تملأ ارتفاع الحاوية */
+    object-fit: cover; /* مهم: لضمان تغطية الصورة للحاوية دون تشوه، قد يتم قص جزء منها */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.property-card:hover .property-img {
+    transform: scale(1.05); /* تكبير خفيف للصورة عند التمرير لجعلها أكثر ديناميكية */
+}
+
+/* ... بقية الكود CSS السابق ... */
